@@ -8,6 +8,7 @@ import { Map as map } from 'immutable';
 import logger from 'redux-logger';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
+import { BrowserRouter } from 'react-router-dom';
 
 const store = createStore(
   reducer,
@@ -20,7 +21,10 @@ const store = createStore(
 const homeContainer = document.getElementById('home-container')
 
 hydrate(
-  <Provider store={store}>
-    <Home />
-  </Provider>, homeContainer)
+  <BrowserRouter>
+    <Provider store={store}>
+      <Home />
+    </Provider>
+  </BrowserRouter>
+  , homeContainer)
 
