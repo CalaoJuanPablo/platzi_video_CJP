@@ -12,6 +12,7 @@ import thunk from 'redux-thunk';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Header from '../pages/components/header';
 import Contacto from '../contacto/components/contacto';
+import Perfil from '../perfil/components/Perfil';
 
 const store = createStore(
   reducer,
@@ -31,6 +32,7 @@ hydrate(
         <Route path="/" exact component={Home} />
         <Route path="/videos" exact component={Videos} />
         <Route path="/contacto" exact component={Contacto} />
+        <Route path="/perfil" exact component={Perfil} />
       </Fragment>
     </Provider>
   </BrowserRouter>

@@ -1,0 +1,28 @@
+.Perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  opacity: .87;
+  font-size: 24px;
+  padding: 50px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.Perfil p {
+  line-height: 1.5;
+  letter-spacing: 1.3px;
+}
+
+.Perfil p a {
+  color: #ffffff;
+}
