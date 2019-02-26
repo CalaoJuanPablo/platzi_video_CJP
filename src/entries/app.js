@@ -11,6 +11,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Header from '../pages/components/header';
+import Contacto from '../contacto/components/contacto';
 
 const store = createStore(
   reducer,
@@ -29,6 +30,7 @@ hydrate(
         <Header />
         <Route path="/" exact component={Home} />
         <Route path="/videos" exact component={Videos} />
+        <Route path="/contacto" exact component={Contacto} />
       </Fragment>
     </Provider>
   </BrowserRouter>
