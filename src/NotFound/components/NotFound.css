@@ -1,3 +1,19 @@
 .NotFound {
+  text-align: center;
   color: #fff;
+}
+
+.NotFound a {
+  color: lightblue;
+}
+
+.NotFound .Button {
+  background: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: none;
+  color: #171d30;
+  font-size: 16px;
+  margin: 10px;
+  margin-bottom: 10px;
 }

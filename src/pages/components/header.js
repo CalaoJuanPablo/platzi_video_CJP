@@ -35,6 +35,11 @@ class Header extends Component {
                 Perfil
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/not-found" activeClassName="is-selected">
+                Not Found
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </header>
