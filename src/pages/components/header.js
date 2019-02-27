@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import './header.css';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { withRouter } from 'react-router';
 import logo from '../../../images/logo.png';
 
 class Header extends Component {
+  handleClick = () =>
+    this.props.history.goBack();
+  
   render() {
     return (
       <header className="Header">
@@ -40,6 +44,11 @@ class Header extends Component {
                 Not Found
               </NavLink>
             </li>
+            <li>
+              <a onClick={this.handleClick}>
+                👈🏽
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -47,4 +56,4 @@ class Header extends Component {
   }
 }
 
-export default Header
+export default withRouter(Header);
