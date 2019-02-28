@@ -22,7 +22,7 @@ module.exports = (env) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'js/[name].js',
-      publicPath: path.resolve(__dirname, 'dist')+"/",
+      publicPath: "/",
       chunkFilename: 'js/[id].[chunkhash].js',
     },
     devServer: {
@@ -62,7 +62,7 @@ module.exports = (env) => {
             options: {
               limit: 10000,
               fallback: 'file-loader',
-              name: 'images/[name].[hash].[ext]',
+              name: 'images/[name].[ext]',
             }
           }
         },

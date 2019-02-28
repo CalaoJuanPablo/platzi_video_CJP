@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    "home": path.resolve(__dirname, 'src/pages/containers/home.js'),
+    "app": path.resolve(__dirname, 'src/pages/containers/app.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -48,7 +48,7 @@ module.exports = {
           options: {
             limit: 10000,
             fallback: 'file-loader',
-            name: 'images/[name].[hash].[ext]',
+            name: 'images/[name].[ext]',
           }
         }
       },
